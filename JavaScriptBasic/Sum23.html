@@ -1,0 +1,27 @@
+<html>
+
+<head>
+
+<body>
+    <script>
+        function testresult(c, java, android, react) {
+            var sum = c + android + java + react;
+            return sum;
+        };
+
+        var marks = testresult(40, 50, 60, 70);
+        document.write("My result is : " + marks + "<br/>");
+
+
+        function percentage(total) {
+            var totalmarks = total / 400 * 100;
+
+            return totalmarks;
+        };
+
+        var result = percentage(marks);
+        document.write("My result is = " + result);
+
+    </script>
+</body>
+</head>

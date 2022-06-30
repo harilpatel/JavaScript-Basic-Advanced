@@ -1,0 +1,19 @@
+<html>
+
+<head></head>
+
+<body>
+    <form name="test">
+        Enter Form : <input type="text" name="name" />
+        <input type="button" onclick="data()" value="submit" />
+    </form>
+
+    <script>
+        function data() {
+            var name = document.test.name.value;
+            alert("Hi:" + name);
+        }
+    </script>
+</body>
+
+</html>

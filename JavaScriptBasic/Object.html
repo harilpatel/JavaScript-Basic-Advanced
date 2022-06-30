@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        let namee = {
+            backend: 'java',
+            frontend: 'react.JS',
+            ranking: 10,
+            marks: function () {
+                return 100;
+            },
+            languagetype: function () {
+                return this.backend + '' + this.frontend;
+            }
+        };
+
+        console.log(namee);
+
+        document.write(namee + "<br/>");
+        document.write(namee.backend + "<br>");
+        document.write(namee.frontend + "<br>");
+        document.write(namee.ranking + "<br>");
+        document.write(namee.ranking + "<br>");
+        document.write(namee.marks() + "<br>");
+        document.write(namee.languagetype() + "<br>");
+        document.write(namee.backend + "" + namee.frontend + "" + namee.ranking + "" + namee.marks() + "" + namee.languagetype());
+
+        namee.frontend = "php";
+        document.write(namee.frontend);
+    </script>
+</body>
+
+</html>

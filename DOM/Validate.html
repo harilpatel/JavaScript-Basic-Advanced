@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <form name="myform" method="get" action="2.html" onsubmit="return validateform()">
+        Name : <input type="text" name="name" /> <br>
+        Password : <input type="password" name="password" /> <br>
+        <input type="submit" value="register" />
+    </form>
+    <script>
+        function validateform() {
+            var name1 = document.myform.name.value;
+            var password1 = document.myform.password.value;
+
+
+            if (name1 == null || name1 == "") {
+                alert("Name is required");
+                return false;
+            } else if (password1.length < 10) {
+                alert("Password Length Must Be greater than 10");
+                return false;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

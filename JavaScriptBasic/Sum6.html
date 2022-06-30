@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Welcome To My Domain</title>
+    <script type="text/javascript">
+        function demo() {
+            var c = "ABCDEFGHIJKLMNOPQRSTUVWXTZ0123456789abcdefghiklmnopqrstuvwxyz";
+            var strlength = 8;
+            var random = '';
+            for (var i = 0; i < strlength; i++) {
+                var num = Math.floor(Math.random() * c.length);
+                random += c.substring(num, num + 1);
+            }
+            document.rdform.random.value = random;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="rdform">
+        <input type="button" value="RandomString" onClick="demo();">&nbsp;
+        <input type="text" name="random" value="">
+    </form>
+</body>
+
+</html>

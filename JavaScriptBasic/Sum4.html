@@ -1,0 +1,26 @@
+<html>
+
+<head></head>
+
+<body>
+
+    <script>
+        function mark(science, math, ss) {
+            var total = science + math + ss;
+            return total;
+        }
+
+        var total = mark(84, 75, 95);
+        document.write("My Marks are : " + total + "<br/>");
+
+
+        function percentage(tot) {
+            var tot = tot / 300 * 100;
+            return tot;
+        }
+        var result = percentage(total);
+        document.write("My Result is : " + result);
+    </script>
+</body>
+
+</html>
